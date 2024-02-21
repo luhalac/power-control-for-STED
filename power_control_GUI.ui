@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {background-color: #333333; color: #ffffff;}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>411</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox
+{
+    font-size: 18px;
+    font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: #333333; 
+	color: #ffffff;
+}</string>
+    </property>
+    <property name="title">
+     <string>642 nm laser</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_home1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogup1">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> ▲</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogdown1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>90</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>▼</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>47</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 12px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Jog 5 º</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogdownf1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>100</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>▼</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogupf1">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> ▲</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 12px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Jog1 º</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcdNumber1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>64</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLCDNumber{
+    color: rgb(255, 255, 255);    
+    background-color: rgb(0, 0, 0);
+}</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_setpower1">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>60</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>30</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 16px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Set Power (uW)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_setpower">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>60</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+    font-size: 12px;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Set</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>411</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox
+{
+    font-size: 18px;
+    font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: #333333; 
+	color: #ffffff;
+}</string>
+    </property>
+    <property name="title">
+     <string>592 nm laser</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_home2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogdown2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>▼</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogup2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>59</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> ▲</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogupf2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> ▲</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogdownf2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>120</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>▼</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>40</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 12px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Jog1 º</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 12px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Jog 5 º</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcdNumber2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>64</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLCDNumber{
+    color: rgb(255, 255, 255);    
+    background-color: rgb(0, 0, 0);
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>50</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 16px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Set Power (uW)</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_setpower2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>80</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_setpower_2">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>80</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+    font-size: 12px;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Set</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>411</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox
+{
+    font-size: 18px;
+    font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: #333333; 
+	color: #ffffff;
+}</string>
+    </property>
+    <property name="title">
+     <string>775 nm laser</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_home3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>30</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 12px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Jog1 º</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogdown3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>▼</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogupf3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>50</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> ▲</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 12px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Jog 5 º</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogup3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>49</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> ▲</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_jogdownf3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>110</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>▼</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>8</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcdNumber3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>64</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLCDNumber{
+    color: rgb(255, 255, 255);    
+    background-color: rgb(0, 0, 0);
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>50</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+    font-size: 16px;
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Set Power (uW)</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_setpower_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>80</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_setpower_3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>80</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+    font-size: 12px;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Set</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>450</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
